@@ -2,19 +2,25 @@ import React, { useState } from "react";
 
 
 function Newschedule() {
-    const [activity, setActivity] = useState("");
-    const [time, setTime] = useState("");
-    const [duration, setDuration] = useState("");
-    const [status, setStatus] = useState("");
-    
+   
+    const [schedule, setSchedule] = useState({
+      activity:"Yoga",
+      status:"Pending" ,
+      time:"",
+      duration:""
 
+    })
+    function handleChange(event){
+      setSchedule({...schedule,[event.target.name]:event.target.value})
+    }
+    console.log (schedule)
     function handleSubmit(e) {
         e.preventDefault();
         const itemData = {
-          activity: activity,
-          time: time,
-          duration: duration,
-          status: status,
+          activity: schedule.activity,
+          time: schedule.time,
+          duration: schedule.duration,
+          status: schedule.status
         };
         fetch("https://silly-smiling-cuticle.glitch.me/schedule", {
           method: "POST",
@@ -22,7 +28,11 @@ function Newschedule() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(itemData),
-        })
+        });
+        e.target.reset()
+        // setSchedule.time("");
+        // setSchedule.duration("");
+        // setSchedule(schedule.time)
         // .then((r) => r.json())
         // .then((newItem) => onAddItem(newItem));
       }
@@ -30,14 +40,14 @@ function Newschedule() {
 
   return (
     <div>
-      <form className='form-group bg-light p-5 mt-4' onSubmit={handleSubmit}>
+      <form className='form-group bg-light p-5 mt-4'onSubmit={handleSubmit}>
         <span className='headings fs-5'>Create a new schedule</span>
         <div className="mb-3">
             <label className="form-label">Activity</label>
             <select className='form-select'
-                value={activity}
+                value={schedule.activity}
                 name="activity"
-                onChange={(e) => setActivity(e.target.value)}
+                onChange={handleChange}
             >
                 <option>Yoga</option>
                 <option>Push ups</option>
@@ -50,8 +60,8 @@ function Newschedule() {
             <input type="text" 
                 className="form-control" 
                 name="time"
-                value={time}
-                onChange={(e) => setTime(e.target.value)}
+                value={schedule.time}
+                onChange={handleChange}
                 placeholder="enter time"/>
         </div>
         <div className="mb-3">
@@ -59,16 +69,16 @@ function Newschedule() {
             <input type="text" 
                 className="form-control" 
                 name="duration"
-                value={duration}
-                onChange={(e) => setDuration(e.target.value)}
+                value={schedule.duration}
+                onChange={handleChange}
                 placeholder="enter duration"/>
         </div>
         <div className="mb-3">
             <label className="form-label">Status</label>
             <select className='form-select'
-                value={status}
+                value={schedule.status}
                 name="status"
-                onChange={(e) => setStatus(e.target.value)}
+                onChange={handleChange}
             >
                 <option>Pending</option>
                 <option>Done</option>

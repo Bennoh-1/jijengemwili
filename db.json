@@ -1,53 +1,63 @@
-
-
 {
-    "activities": [
-      {
-        "id": 1,
-        "name": "Yoga",
-        "description": "Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation. Yoga is an ancient practice that may have originated in India. It involves movement, meditation, and breathing techniques to promote mental and physical well-being."
-      },
-      {
-        "id": 2,
-        "name": "Push ups",
-        "description": "A conditioning exercise performed in a prone position by raising and lowering the body with the straightening and bending of the arms while keeping the back straight and supporting the body on the hands and toes."
-      },
-      {
-        "id": 1,
-        "name": "Squats",
-        "description": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and knee joints extend and the ankle joint plantarflexes when standing up."
-      }
-    ],
-    "schedule": [
-      {
-        "id": 1,
-        "activity": "Yoga",
-        "time": "10.00am",
-        "duration": "3",
-        "status": "Done"
-      },
-      {
-        "id": 2,
-        "activity": "Squats",
-        "time": "01.00pm",
-        "duration": "1",
-        "status": "pending"
-      },
-      {
-        "id": 3,
-        "activity": "Sleeping",
-        "time": "10.00pm",
-        "duration": "5",
-        "status": "pending"
-      },
-      {
-        "activity": "meditation",
-        "time": "12:00 pm",
-        "duration": "2",
-        "status": "",
-        "id": 4
-      }
-  
-      
-    ]
-  }
+  "activities": [
+    {
+      "id": 1,
+      "name": "Yoga",
+      "description": "Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation. Yoga is an ancient practice that may have originated in India. It involves movement, meditation, and breathing techniques to promote mental and physical well-being."
+    },
+    {
+      "id": 2,
+      "name": "Push ups",
+      "description": "A conditioning exercise performed in a prone position by raising and lowering the body with the straightening and bending of the arms while keeping the back straight and supporting the body on the hands and toes."
+    },
+    {
+      "id": 1,
+      "name": "Squats",
+      "description": "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and knee joints extend and the ankle joint plantarflexes when standing up."
+    }
+  ],
+  "schedule": [
+    {
+      "id": 1,
+      "activity": "Yoga",
+      "time": "10.00am",
+      "duration": "3",
+      "status": "Done"
+    },
+    {
+      "id": 2,
+      "activity": "Squats",
+      "time": "01.00pm",
+      "duration": "1",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "activity": "Sleeping",
+      "time": "10.00pm",
+      "duration": "5",
+      "status": "pending"
+    },
+    {
+      "activity": "meditation",
+      "time": "12:00 pm",
+      "duration": "2",
+      "status": "",
+      "id": 4
+    },
+    {
+      "activity": "Yoga",
+      "time": "10am",
+      "duration": "35min",
+      "status": "Done",
+      "id": 5
+    },
+    {
+      "activity": "Yoga",
+      "time": "10am",
+      "duration": "35min",
+      "status": "Done",
+      "id": 6
+    }
+  ]
+}
