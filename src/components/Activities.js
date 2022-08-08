@@ -6,7 +6,7 @@ function Activities() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/activities")
+        fetch("https://silly-smiling-cuticle.glitch.me/activities")
           .then((r) => r.json())
           .then((item) => setItems(item));
       }, []);

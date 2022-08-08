@@ -16,7 +16,7 @@ function Newschedule() {
           duration: duration,
           status: status,
         };
-        fetch("http://localhost:5000/schedule", {
+        fetch("https://silly-smiling-cuticle.glitch.me/schedule", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
