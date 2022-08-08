@@ -1,8 +1,6 @@
 jijenge app
 Description jijenge app is a web base application to help you keep fit and healthy. These app can be downloaded on mobile phones quite easily. The aim of these app is to make your lifestyle healthier by tracking your workout pattern.
 
-Available Scripts
-Javascript;used for functionality of the application HTML ; used to create the structure of the application CSS;used to style the application db json server
 
 npm start
 Runs the app in the development mode.
